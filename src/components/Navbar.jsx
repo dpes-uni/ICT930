@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header>
       <nav>
-        <h2>ICT930</h2>
+        <h2>ServiceHub</h2>
         <ul>
           <li><NavLink to="/">Dashboard</NavLink></li>
           <li><NavLink to="/services">Services</NavLink></li>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "High-Speed Fiber Internet",
+    "category": "Internet",
+    "description": "Gigabit fiber connection with unlimited data",
+    "price": 89.99
+  },
+  {
+    "id": 2,
+    "name": "Standard Cable Internet",
+    "category": "Internet",
+    "description": "Reliable cable internet up to 200 Mbps",
+    "price": 54.99
+  },
+  {
+    "id": 3,
+    "name": "Mobile Hotspot Plan",
+    "category": "Internet",
+    "description": "5G mobile hotspot with 50GB monthly data",
+    "price": 45.00
+  },
+  {
+    "id": 4,
+    "name": "Electricity Supply",
+    "category": "Utilities",
+    "description": "Residential electricity with green energy option",
+    "price": 120.50
+  },
+  {
+    "id": 5,
+    "name": "Natural Gas Service",
+    "category": "Utilities",
+    "description": "Home natural gas for heating and cooking",
+    "price": 65.75
+  },
+  {
+    "id": 6,
+    "name": "Water & Sewer",
+    "category": "Utilities",
+    "description": "Municipal water supply and wastewater service",
+    "price": 42.30
+  },
+  {
+    "id": 7,
+    "name": "Streaming Bundle",
+    "category": "Entertainment",
+    "description": "Access to movies, TV shows, and music streaming",
+    "price": 19.99
+  },
+  {
+    "id": 8,
+    "name": "Gaming Subscription",
+    "category": "Entertainment",
+    "description": "Cloud gaming library with 100+ titles",
+    "price": 14.99
+  }
+]

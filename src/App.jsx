@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AppProvider } from './context/AppContext';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Services from './pages/Services';
@@ -10,19 +11,21 @@ import './index.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:id" element={<ServiceDetails />} />
-          <Route path="/my-services" element={<MyServices />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+    <AppProvider>
+      <BrowserRouter>
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:id" element={<ServiceDetails />} />
+            <Route path="/my-services" element={<MyServices />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </AppProvider>
   );
 }
 
