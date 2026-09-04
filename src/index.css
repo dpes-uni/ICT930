@@ -140,6 +140,11 @@ nav li a.active {
   color: #fff;
 }
 
+nav li a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 /* ===== Buttons ===== */
 
 button {
@@ -647,4 +652,19 @@ main > p:has(+ .services-grid) {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
   }
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }

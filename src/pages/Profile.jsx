@@ -63,9 +63,10 @@ function Profile() {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
+            aria-describedby={errors.fullName && 'error-fullName'}
           />
           {errors.fullName && (
-            <span className="error-message">{errors.fullName}</span>
+            <span className="error-message" id="error-fullName">{errors.fullName}</span>
           )}
         </div>
 
@@ -77,9 +78,10 @@ function Profile() {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            aria-describedby={errors.email && 'error-email'}
           />
           {errors.email && (
-            <span className="error-message">{errors.email}</span>
+            <span className="error-message" id="error-email">{errors.email}</span>
           )}
         </div>
 
@@ -91,9 +93,10 @@ function Profile() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
+            aria-describedby={errors.phone && 'error-phone'}
           />
           {errors.phone && (
-            <span className="error-message">{errors.phone}</span>
+            <span className="error-message" id="error-phone">{errors.phone}</span>
           )}
         </div>
 
