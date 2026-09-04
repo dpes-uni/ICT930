@@ -9,7 +9,7 @@ function Services() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   useEffect(() => {
-    fetch('/data/services.json')
+    fetch(`${import.meta.env.BASE_URL}data/services.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to load services');

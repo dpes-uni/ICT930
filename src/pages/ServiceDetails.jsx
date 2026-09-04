@@ -10,7 +10,7 @@ function ServiceDetails() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/data/services.json')
+    fetch(`${import.meta.env.BASE_URL}data/services.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to load service');
