@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
 
 function Services() {
@@ -55,7 +56,10 @@ function Services() {
 
   return (
     <main>
-      <h1>Services</h1>
+      <div className="services-header">
+        <h1>Services</h1>
+        <Link to="/add-service" className="btn-primary">Add Your Own Service</Link>
+      </div>
 
       <div className="services-controls">
         <label htmlFor="search-services">

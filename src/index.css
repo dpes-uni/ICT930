@@ -260,6 +260,19 @@ select:focus-visible {
   color: var(--color-text);
 }
 
+.services-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-header h1 {
+  margin: 0;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -491,6 +504,31 @@ select:focus-visible {
   box-shadow: 0 0 0 3px rgba(26, 77, 143, 0.15);
 }
 
+.form-field select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: var(--color-text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-field select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(26, 77, 143, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
 .error-message {
   display: block;
   color: var(--color-error);
@@ -572,6 +610,17 @@ main > p:has(+ .services-grid) {
     width: 100%;
   }
 
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services-header .btn-primary {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
   .services-grid,
   .my-services-list {
     grid-template-columns: 1fr;
@@ -618,6 +667,17 @@ main > p:has(+ .services-grid) {
   .service-details .actions .btn-disabled {
     margin-right: 0;
     width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-actions .btn-primary,
+  .form-actions .btn-back {
+    width: 100%;
+    margin-right: 0;
   }
 }
 

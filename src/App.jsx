@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import ServiceDetails from './pages/ServiceDetails';
 import MyServices from './pages/MyServices';
 import Profile from './pages/Profile';
+import AddService from './pages/AddService';
 import NotFound from './pages/NotFound';
 import './index.css';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/services/:id" element={<ServiceDetails />} />
           <Route path="/my-services" element={<MyServices />} />
+          <Route path="/add-service" element={<AddService />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
